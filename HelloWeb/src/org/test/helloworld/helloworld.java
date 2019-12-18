@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class helloworld. comment deleted.
- * final git test.
  */
 @WebServlet("/helloworld")
 public class helloworld extends HttpServlet {
