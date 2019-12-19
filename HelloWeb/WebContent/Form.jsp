@@ -7,8 +7,10 @@
 <title>Form</title>
 </head>
 <body>
+	<jsp:useBean id="user" class="org.test.bean.User" scope="session"></jsp:useBean>
 	<form action = "JSPSubmit.jsp" method = "get">
-		Name:<input type = "text" name = "Name" required><br>
+		First Name:<input type = "text" name="firstName" value='<jsp:getProperty property="firstName" name="user"/>' ><br>
+		Last Name:<input type="text" name="lastName" value='<jsp:getProperty property="lastName" name="user"/>'><br>
 		Gender:<input type="radio" name = "Gender" value="Male" checked="checked">Male
 			   <input type="radio" name = "Gender" value="Female">Female<br>
 		Language:<input type="checkbox" name="Language" value="English">English

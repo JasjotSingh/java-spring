@@ -7,7 +7,10 @@
 <title>JSPSubmit</title>
 </head>
 <body>
-	Name: <%= request.getParameter("Name") %><br>
+	<jsp:useBean id="user" class="org.test.bean.User" scope="session"></jsp:useBean>
+	<jsp:setProperty property="*" name="user"/>
+	First Name: <%= request.getParameter("firstName") %><br>
+	Last Name: <%= request.getParameter("lastName") %><br>
 	Gender: <%= request.getParameter("Gender") %><br>
 	Language: <% String[] lang = request.getParameterValues("Language");
 					if(lang != null) {
