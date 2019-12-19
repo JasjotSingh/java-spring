@@ -12,5 +12,9 @@
 	<a href = "<%= path %>/servelet1?page=Login" >Login</a><br>
 	<a href = "<%= path %>/servelet1?page=Signup">Sign up</a><br>
 	<a href = "<%= path %>/servelet1?page=About">About</a><br>
+	<a href = "<%= path %>/servelet1?page=JSPForm">JSP Form</a><br>
+	<a href = "<%= path %>/servelet1?page=ServeletForm">Servelet Form</a><br>
+	<a href = "<%= path %>/servelet1?page=setUserBean">Set Bean</a><br>
+	<a href = "<%= path %>/servelet1?page=getUserBean">Get Bean</a>
 </body>
 </html>

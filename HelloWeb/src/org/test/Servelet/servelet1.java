@@ -1,4 +1,4 @@
-package org.test.helloworld;
+package org.test.Servelet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,13 +34,25 @@ public class servelet1 extends HttpServlet {
 		String pageName = request.getParameter("page");
 		switch(pageName) {
 		case "Login":
-			request.getRequestDispatcher("/Login.jsp").forward(request, response);
+			request.getRequestDispatcher("Login.jsp").forward(request, response);
 			break;
 		case "Signup":
-			request.getRequestDispatcher("/SignUp.jsp").forward(request, response);
+			request.getRequestDispatcher("SignUp.jsp").forward(request, response);
 			break;
 		case "About":
-			request.getRequestDispatcher("/About.jsp").forward(request, response);
+			request.getRequestDispatcher("About.jsp").forward(request, response);
+			break;
+		case "JSPForm":
+			request.getRequestDispatcher("Form.jsp").forward(request, response);
+			break;
+		case "ServeletForm":
+			request.getRequestDispatcher("FormServelet.jsp").forward(request, response);
+			break;
+		case "setUserBean":
+			request.getRequestDispatcher("SetUserBean.jsp").forward(request, response);
+			break;
+		case "getUserBean":
+			request.getRequestDispatcher("GetUserBean.jsp").forward(request, response);
 			break;
 		default:
 			out.println("URI messedup");

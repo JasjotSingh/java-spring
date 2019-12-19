@@ -1,4 +1,4 @@
-package org.test.helloworld;
+package org.test.Servelet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class helloworld. comment deleted.
  */
-@WebServlet("/helloworld")
+@WebServlet("/Hello")
 public class helloworld extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -26,7 +26,7 @@ public class helloworld extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().println("<b>Hello World!!</b>");
+		request.getRequestDispatcher("demo.jsp").forward(request, response);
 	}
 
 }
