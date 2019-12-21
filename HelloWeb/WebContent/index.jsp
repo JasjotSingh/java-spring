@@ -7,6 +7,6 @@
 <title>Home</title>
 </head>
 <body>
-	<% request.getRequestDispatcher("demo.jsp").forward(request, response); %>
+	<% request.getRequestDispatcher("Login.jsp").forward(request, response); %>
 </body>
 </html>

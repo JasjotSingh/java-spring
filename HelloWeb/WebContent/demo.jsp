@@ -7,8 +7,10 @@
 <title>demo</title>
 </head>
 <body>
+	<jsp:useBean id="user" class="org.test.bean.User" scope="session" ></jsp:useBean>
 	<% String path = request.getContextPath(); %>
 	in home!!<br>
+	Welcome <jsp:getProperty property="firstName" name="user"/> <jsp:getProperty property="lastName" name="user"/>!!!<br>
 	<a href = "<%= path %>/servelet1?page=Login" >Login</a><br>
 	<a href = "<%= path %>/servelet1?page=Signup">Sign up</a><br>
 	<a href = "<%= path %>/servelet1?page=About">About</a><br>
