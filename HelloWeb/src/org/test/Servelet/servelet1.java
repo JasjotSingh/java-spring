@@ -28,9 +28,10 @@ public class servelet1 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
+		///since all hrefs id no method given works on get.
 		PrintWriter out = response.getWriter();
-		//response.getWriter().append("Served at: ").append(request.getContextPath()).append( request.getServletPath() );
+		
 		String pageName = request.getParameter("page");
 		switch(pageName) {
 		case "Login":

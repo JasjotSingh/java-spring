@@ -37,6 +37,7 @@ public class TestLoginController extends HttpServlet {
 			User user = (User)request.getSession().getAttribute("user");
 			user.setFirstName("Jasjot");
 			user.setLastName("Singh");
+			//if increased the value of inactiveinterval , then after that many seconds, session ends.
 			session.setMaxInactiveInterval(0);
 			response.sendRedirect("demo.jsp");
 		}
