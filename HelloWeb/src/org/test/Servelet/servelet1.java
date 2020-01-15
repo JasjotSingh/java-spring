@@ -19,7 +19,7 @@ public class servelet1 extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public servelet1() {
+    public servelet1 () {
         super();
         // TODO Auto-generated constructor stub
     }

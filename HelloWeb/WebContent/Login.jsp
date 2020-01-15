@@ -16,7 +16,7 @@
 		   response.sendRedirect("demo.jsp");
 	   }
 	%>
-	<form action = "<%= path %>/TestLoginController" method = "post">
+	<form  action = "<%= path %>/TestLoginController" method = "post">
 		UserName: <input name = "userName" type="text" required><br>
 		PassWord:<input name = "password" type="password" required><br>
 		<input type="submit" name="submit">
